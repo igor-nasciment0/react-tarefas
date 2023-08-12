@@ -1,0 +1,54 @@
+.instagram-barra-lateral
+{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    padding: 23px 28px;
+    color: white;
+    background-color: transparent;
+
+    .logo
+    {
+        display: flex;
+        align-items: center;
+
+        img
+        {
+            width: 42px;
+            margin-right: 11px;
+        }
+
+        h1
+        {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav div
+    {
+        display: flex;
+        align-items: center;
+
+        img
+        {
+            width: 21px;
+            height: 21px;
+            margin-right: 18px;
+        }
+
+        h2
+        {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
