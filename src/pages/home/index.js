@@ -8,6 +8,7 @@ export default function Home() {
         
             <nav>
                 <li><Link to={'/instagram'}>Instagram</Link></li>
+                <li><Link to={'/marvel'}>Marvel</Link></li>
             </nav>
         </div>
     )
