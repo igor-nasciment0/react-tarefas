@@ -1,5 +1,9 @@
 .instagram-barra-lateral
 {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     gap: 45px;
