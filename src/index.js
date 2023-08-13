@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Instagram from './pages/instagram';
 import Marvel from './pages/marvel';
 import PaginaPokemon from './pages/pokemon';
+import Filmes from './pages/filmesQuery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path='/instagram' element={<Instagram/>}/>
         <Route path='/marvel' element={<Marvel/>} />
         <Route path='/pokemon' element={<PaginaPokemon/>} />
+        <Route path='/imdbfilmes' element={<Filmes/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

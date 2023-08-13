@@ -1,0 +1,219 @@
+.pagina-filmes
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    min-height: 100vh;
+    background-color: #F5F6FA;
+
+    main
+    {
+        flex-grow: 1;
+        width: 100%;
+
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container
+    {
+        width: 100%;
+        max-width: 495px;
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 0px 0px 14px 1px rgba(173, 173, 173, 0.25);
+    }
+
+    .cont-img
+    {
+        padding: 5px;
+        padding-top: 88px;
+        background-image: url('../../../public/filmesBG.png');
+        background-size: cover;
+    }
+
+    .cont-img h1
+    {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 6px 14px;
+        width: min-content;
+
+        border-radius: 3px;
+
+        color: #FFF;
+        background-color: #111111BD;
+    }
+
+    .container-tabela
+    {
+        background-color: #FFF;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 36px;
+
+        h2
+        {
+            font-size: 18px;
+            font-weight: 600;
+            color: #646464;
+            margin-bottom: 10px;
+        }
+
+        .cont-input
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            padding: 6px 10px;
+            border: #C5BC4D solid 1px;
+            border-radius: 3px;
+
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .cont-input label
+        {
+            color: #ADA646;
+            font-size: 10px;
+            font-weight: 700;
+
+            margin-bottom: 3px;
+        }
+
+        .cont-input input
+        {
+            border: none;
+        }
+
+        .cont-input input:focus-visible
+        {
+            border: none;
+            outline: none;
+        }
+
+        .cont-input img
+        {
+            position: absolute;
+            top: 14px;
+            right: 12px;
+        }  
+
+        .tabela
+        {
+            position: relative;
+            max-height: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 25px;
+        }
+
+        .tabela::-webkit-scrollbar
+        {
+            width: 5px;
+            border-radius: 3px;
+            position: absolute;
+            right: 0;
+        }
+
+        .tabela::-webkit-scrollbar-thumb
+        {
+            background-color: rgba($color: #606060, $alpha: 0.3);
+        }
+
+        table
+        {
+            text-align: left;
+            border-spacing: 0;
+        }
+
+        table th
+        {
+            color: #A0960D;
+            font-size: 14px;
+            font-weight: 600;
+
+            padding: 5px 18px;
+        }
+
+        table td
+        {
+            font-size: 12px;
+            font-weight: 500;
+
+            padding: 12px 18px;
+        }
+
+        table td:last-child
+        {
+            width: 30%;
+        }
+
+        table td:first-child
+        {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            font-weight: 800;
+        }
+
+        tbody tr
+        {
+            position: relative;
+            border-radius: 9px;
+            color: #606060;
+        }
+
+        tbody tr:hover
+        {
+            background-color: #C5BC4D;
+            color: #FFF; 
+        }
+
+        tbody img
+        {
+            width: 70px;
+            height: 70px;
+
+            position: absolute;
+            visibility: hidden;
+            right: -19px;
+            top: -20%;
+            border-radius: 1000px;
+        }
+
+        tbody tr:hover img
+        {
+            visibility: visible;
+        }
+
+        h4
+        {
+            margin: 10px 0;
+        }
+
+        button
+        {
+            margin: 5px 0;
+            width: 100%;
+
+            padding: 8px 10px;
+            font-size: 14px;
+            color: #FFF;
+            background-color: #223874;
+            border: none;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+    }
+}
