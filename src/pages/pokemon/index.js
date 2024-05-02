@@ -41,7 +41,7 @@ export default function PaginaPokemon() {
                 {listaPokemons.map(item => 
                     <Pokemon pokeInfo={item} 
                              nomeFiltro={nomeFiltro}
-                             shinyPokemon={(Math.random() * 25).toFixed() == 1}         
+                             shinyPokemon={(Math.random() * 25).toFixed() === 1}         
                     />
                 )}
             </section>
